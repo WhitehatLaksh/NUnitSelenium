@@ -55,7 +55,7 @@ namespace NUnitSelenium
             }
             if (build != null)
             {
-                capabilities.SetCapability("build", build);
+                capabilities.SetCapability("build", "Download a file & Azure Pipeline");
             }
 
             capabilities.SetCapability("user", "lakshaysaini");

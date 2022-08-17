@@ -59,13 +59,13 @@ namespace NUnitSelenium
             }
 
             capabilities.SetCapability("user", "lakshaysaini");
-            capabilities.SetCapability("accessKey", "5dW8X6si7Fb3v8uXVQviU2iEXRrwXLCmgKk97SheWzxXuEFh9A");
+            capabilities.SetCapability("accessKey", "fDomD0m6YN3wYU5UJ6eNdbuArbl0drP09z4V9akKUuTPIL2EYD");
 
             capabilities.SetCapability("name",
             String.Format("{0}:{1}",
             TestContext.CurrentContext.Test.ClassName,
             TestContext.CurrentContext.Test.MethodName));
-            driver.Value = new RemoteWebDriver(new Uri("http://lakshaysaini:5dW8X6si7Fb3v8uXVQviU2iEXRrwXLCmgKk97SheWzxXuEFh9A@hub.lambdatest.com/wd/hub"), capabilities, TimeSpan.FromSeconds(600));
+            driver.Value = new RemoteWebDriver(new Uri("http://lakshaysaini:fDomD0m6YN3wYU5UJ6eNdbuArbl0drP09z4V9akKUuTPIL2EYD@hub.lambdatest.com/wd/hub"), capabilities, TimeSpan.FromSeconds(600));
             Console.Out.WriteLine(driver);
         }
 

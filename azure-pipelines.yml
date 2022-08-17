@@ -14,7 +14,7 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
   LT_USERNAME: 'lakshaysaini'
-  LT_ACCESS_KEY: '5dW8X6si7Fb3v8uXVQviU2iEXRrwXLCmgKk97SheWzxXuEFh9A'
+  LT_ACCESS_KEY: 'fDomD0m6YN3wYU5UJ6eNdbuArbl0drP09z4V9akKUuTPIL2EYD'
 
 steps:
 - task: NuGetToolInstaller@1

@@ -16,8 +16,7 @@ variables:
   LT_USERNAME: 'lakshaysaini'
   LT_ACCESS_KEY: 'fDomD0m6YN3wYU5UJ6eNdbuArbl0drP09z4V9akKUuTPIL2EYD'
   
-- task: Lambdatest.lambda-azure-pipeline-extention.showResults-task.LambdatestResults@1
-  displayName: 'Lambdatest Results'
+
 
 steps:
 - task: NuGetToolInstaller@1

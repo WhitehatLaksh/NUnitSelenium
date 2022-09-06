@@ -42,11 +42,12 @@ namespace NUnitSelenium
         public void Init()
         {
 
-            DesiredCapabilities capabilities = new DesiredCapabilities();
-            capabilities.SetCapability(CapabilityType.BrowserName, browser);
-            capabilities.SetCapability(CapabilityType.platformVersion, 8);
-            capabilities.SetCapability(CapabilityType.platformName, android);
-            capabilities.SetCapability(CapabilityType.deviceName, "Google Pixel");
+           Dictionary<string, object> ltOptions = new Dictionary<string, object>();
+           ltOptions.Add("w3c", true);
+           ltOptions.Add("platformName", "android");
+           ltOptions.Add("deviceName", "Google Pixel");
+           ltOptions.Add("platformVersion", "8");
+           capabilities.AddAdditionalOption('lt:options', ltOptions);
 
             //Requires a named tunnel.
             if (tunnel)

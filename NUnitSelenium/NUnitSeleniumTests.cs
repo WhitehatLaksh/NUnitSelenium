@@ -42,12 +42,11 @@ namespace NUnitSelenium
         public void Init()
         {
 
-           Dictionary<string, object> ltOptions = new Dictionary<string, object>();
-           ltOptions.Add("w3c", true);
-           ltOptions.Add("platformName", "android");
-           ltOptions.Add("deviceName", "Google Pixel");
-           ltOptions.Add("platformVersion", "8");
-           capabilities.SetCapability("LT:Options", ltOptions);
+
+           capabilities.SetCapability("platformName", "android");
+           capabilities.SetCapability("deviceName", "Google Pixel");
+           capabilities.SetCapability("platformVersion", "8");
+
 
             //Requires a named tunnel.
             if (tunnel)

@@ -47,7 +47,7 @@ namespace NUnitSelenium
            ltOptions.Add("platformName", "android");
            ltOptions.Add("deviceName", "Google Pixel");
            ltOptions.Add("platformVersion", "8");
-           capabilities.AddAdditionalOption('lt:options', ltOptions);
+           capabilities.SetCapability("LT:Options", ltOptions);
 
             //Requires a named tunnel.
             if (tunnel)

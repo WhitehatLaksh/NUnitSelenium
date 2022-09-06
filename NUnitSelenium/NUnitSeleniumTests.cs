@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace NUnitSelenium
 {
-    [TestFixture("chrome", "99", "Windows 11")]
+   // [TestFixture("chrome", "99", "Windows 11")]
    // [TestFixture("internet explorer", "11", "Windows 7")]
   //  [TestFixture("firefox", "60", "Windows 7")]
   //  [TestFixture("chrome", "71", "Windows 7")]
@@ -44,9 +44,9 @@ namespace NUnitSelenium
 
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.SetCapability(CapabilityType.BrowserName, browser);
-            capabilities.SetCapability(CapabilityType.Version, version);
-            capabilities.SetCapability(CapabilityType.Platform, os);
-            capabilities.SetCapability(CapabilityType.SupportsLocationContext, "GB");
+            capabilities.SetCapability(CapabilityType.platformVersion, 8);
+            capabilities.SetCapability(CapabilityType.platformName, android);
+            capabilities.SetCapability(CapabilityType.deviceName, "Google Pixel");
 
             //Requires a named tunnel.
             if (tunnel)
